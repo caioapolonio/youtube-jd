@@ -1,0 +1,10 @@
+.container {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px 12px;
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    color: #0F0F0F;
+    white-space: nowrap;
+}
