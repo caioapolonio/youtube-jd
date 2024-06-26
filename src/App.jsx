@@ -3,7 +3,8 @@ import Community from "./components/Community";
 function App() {
   return (
     <>
-      <Community />
+      <Community postID={3001} />
+      <Community postID={30002} />
     </>
   );
 }
