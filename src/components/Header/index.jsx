@@ -39,7 +39,11 @@ const Header = () => {
           alt="Imagem do icone de uma bulsula"
           className={`${style.header_imgs} ${style.icone_explore}`}
         />
-        <Chip className={style.mark}>All</Chip>
+        <Chip 
+          mark='black'
+          color='white'
+        >All</Chip>
+
         <Chip>New to you</Chip>
         <Chip>UX design</Chip>
         <Chip>Figma</Chip>
