@@ -1,0 +1,35 @@
+header {
+    padding: 24px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    height: 24px;
+}
+
+.top_rigth {
+    display: flex;
+    gap: 15px;
+}
+
+.bottom {
+    padding: 24px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    overflow-x: scroll;
+}
+
+.icone_explore {
+    margin-right: 24px;
+}
+
+.mark {
+    background-color: #0f0f0f;
+    color: #FFFFFF;
+}

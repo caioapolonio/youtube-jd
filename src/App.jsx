@@ -1,7 +1,16 @@
 import Shorts from "./components/Shorts";
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 function App() {
-  return <Shorts />;
+
+  return (
+    <>
+      <Header/>
+      <Shorts/>
+      <Footer/>
+    </>
+  )
 }
 
 export default App;
