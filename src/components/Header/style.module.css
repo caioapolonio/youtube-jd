@@ -1,35 +1,40 @@
-header {
-    padding: 24px;
+.Header {
+  padding: 24px;
 }
 
 .top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-img {
-    height: 24px;
+.header_imgs {
+  height: 24px;
 }
-
+.icone_explore {
+  height: 24px;
+}
 .top_rigth {
-    display: flex;
-    gap: 15px;
+  display: flex;
+  gap: 15px;
 }
 
 .bottom {
-    padding: 24px 0;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    overflow-x: scroll;
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: scroll;
+}
+.bottom::-webkit-scrollbar {
+  display: none;
 }
 
 .icone_explore {
-    margin-right: 24px;
+  margin-right: 24px;
 }
 
 .mark {
-    background-color: #0f0f0f;
-    color: #FFFFFF;
+  background-color: #0f0f0f;
+  color: #ffffff;
 }
