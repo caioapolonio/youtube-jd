@@ -2,35 +2,11 @@ import React, { useState, useEffect } from "react";
 import style from "./style.module.css";
 import menuIcon from "../../assets/YoutubeVideos/menu_icon_black.svg";
 import divider from "../../assets/YoutubeVideos/divider.svg";
+import useFetchDataByUrl from "../../hooks/fetchUrl";
 
 const YoutubeVideo = ({ videoID }) => {
-  // , channelName,channelAvatar,videoTitle,videoThumb,videoViews,videoDate
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  const fetchDataById = async (id) => {
-    try {
-      const response = await fetch(
-        `https://complemento-grupo-3-jd.vercel.app/youtubeVideos/${id}`
-      );
-      if (!response.ok) {
-        throw new Error(`Erro HTTP! status: ${response.status}`);
-      }
-      const result = await response.json();
-      setData(result);
-      console.log(result);
-      setLoading(false);
-    } catch (err) {
-      setError(err);
-      setLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    fetchDataById(videoID);
-  }, [videoID]);
-
+  const baseUrl = "https://complemento-grupo-3-jd.vercel.app/youtubeVideos";
+  const { data, loading, error } = useFetchDataByUrl(baseUrl, videoID);
   const thumbSettings = data?.thumbSettings
     ? {
         objectPosition: data.thumbSettings.object_position,
