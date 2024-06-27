@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.section`
   min-width: 320px;
   max-width: 100%;
   padding: 16px 0px;
   display: flex;
   flex-direction: column;
   gap: 24px;
+  background-color: #fff;
 `;
 export const TitleContainer = styled.div`
   display: flex;
