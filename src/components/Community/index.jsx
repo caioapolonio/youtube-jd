@@ -25,7 +25,7 @@ export default function Community({ postID }) {
       }
       const result = await response.json();
       setData(result);
-      console.log(result);
+      // console.log(result);
       setLoading(false);
     } catch (err) {
       setError(err);
