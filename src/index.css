@@ -5,6 +5,7 @@
   --font-dark-grey: rgba(96, 96, 96, 1); /* previous --font-grey */
   --background-color-grey: rgba(242, 242, 242, 1);
   --font-default: "Roboto", sans-serif;
+  --font-color-grey: rgba(242, 242, 242, 1);
 }
 * {
   margin: 0;

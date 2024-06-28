@@ -12,8 +12,9 @@
 }
 .video_infos_container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
+  width: calc(100% - 1.5rem);
   font-weight: 400;
   gap: 12px;
   margin-inline: 0.75rem;
@@ -46,4 +47,11 @@
   line-height: 0.8788rem;
   letter-spacing: 0.06em;
   text-align: left;
+}
+
+.menu_icon {
+  margin-left: auto;
+}
+.hover_itens:hover {
+  cursor: pointer;
 }
