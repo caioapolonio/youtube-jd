@@ -20,20 +20,22 @@ const YoutubeVideo = ({ videoID }) => {
     <div>
       <div className={style.video_container}>
         <img
-          className={style.video_thumb}
+          className={`${style.video_thumb} ${style.hover_itens}`}
           src={data.videoThumb}
           alt="videoThumb"
           style={thumbSettings}
         />
         <div className={style.video_infos_container}>
           <img
-            className={style.user_avatar}
+            className={`${style.user_avatar} ${style.hover_itens}`}
             src={data.channelAvatar}
             alt="channelAvatar"
           />
           <div className={style.video_infos}>
-            <div className={style.Title}>{data.videoTitle}</div>
-            <div className={style.user_view_date}>
+            <div className={`${style.Title} ${style.hover_itens}`}>
+              {data.videoTitle}
+            </div>
+            <div className={`${style.user_view_date} ${style.hover_itens}`}>
               <p>{data.channelName}</p>
               <img src={divider} alt="divider" />
               <p>{data.videoViews}</p>
@@ -42,7 +44,11 @@ const YoutubeVideo = ({ videoID }) => {
               <p>{data.videoDate}</p>
             </div>
           </div>
-          <img className={style.menu_icon} src={menuIcon} alt="menuIcon" />
+          <img
+            className={`${style.menu_icon} ${style.hover_itens}`}
+            src={menuIcon}
+            alt="menuIcon"
+          />
         </div>
       </div>
     </div>
