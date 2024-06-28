@@ -7,7 +7,7 @@ const Shorts = () => {
   return (
     <Container>
       <TitleContainer>
-        <img src={Shorts_Frame} alt="Your SVG" height={24} />
+        <img src={Shorts_Frame} alt="Shorts logo" height={24} />
         <Title>Shorts</Title>
       </TitleContainer>
       <ShortsScroll>
