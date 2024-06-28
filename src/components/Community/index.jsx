@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import communityStyle from "./community.module.css";
 import menuIconSvg from "../../assets/Community/menu_icon_black.svg";
 import commentIcon from "../../assets/Community/comment.svg";
@@ -9,33 +8,11 @@ import firstImage from "../../assets/Community/image_Frame_1.png";
 import secondImage from "../../assets/Community/image_Frame_2.png";
 import userAvatar from "../../assets/Community/user_avatar.png";
 import questionImg from "../../assets/Community/question.png";
+import useFetchDataByUrl from "../../hooks/fetchUrl";
 
 export default function Community({ postID }) {
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  const fetchDataById = async (id) => {
-    try {
-      const response = await fetch(
-        `https://complemento-grupo-3-jd.vercel.app/communityPost/${id}`
-      );
-      if (!response.ok) {
-        throw new Error(`Erro HTTP! status: ${response.status}`);
-      }
-      const result = await response.json();
-      setData(result);
-      console.log(result);
-      setLoading(false);
-    } catch (err) {
-      setError(err);
-      setLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    fetchDataById(postID);
-  }, [postID]);
+  const baseUrl = "https://complemento-grupo-3-jd.vercel.app/communityPost";
+  const { data, loading, error } = useFetchDataByUrl(baseUrl, postID);
 
   if (loading) return <p>Carregando...</p>;
   if (error) return <p>Erro: {error.message}</p>;

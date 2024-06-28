@@ -6,7 +6,6 @@
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  margin-block: 1rem;
   padding-block: 1rem;
 }
 
@@ -49,11 +48,12 @@
   margin-bottom: 1.5rem;
 }
 .content_text {
-  width: 92%;
+  margin-inline: 1rem;
   font-size: 1rem;
   line-height: 1.1719rem;
   font-weight: 400;
   text-align: left;
+  letter-spacing: 0.02em;
 }
 .content_section {
   display: flex;
@@ -166,5 +166,9 @@
 .question_wrapper p {
   font-weight: 400;
   font-size: 0.875rem;
+  color: var(--font-dark-grey);
+}
+
+.comments_wrapper p {
   color: var(--font-dark-grey);
 }
