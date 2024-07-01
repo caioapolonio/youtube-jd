@@ -1,8 +1,15 @@
-# React + Vite
+Juventude Digital - Projeto Youtube Mobile - Equipe 3
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Membros**
+Adriano Braga
+Caio Vinícius - https://github.com/caioapolonio
+Estevam
+Henrique Erinaldo
+Italo Oliveira - https://github.com/italoOliveira-dev
+Lucas Valdemar - https://github.com/Lucas-Valdemar
 
-Currently, two official plugins are available:
+GitHub do projeto
+https://github.com/caioapolonio/youtube-jd
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Visualização do projeto
+https://youtube-jd.vercel.app/
