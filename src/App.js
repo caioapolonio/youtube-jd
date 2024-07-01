@@ -6,4 +6,5 @@ export const Container = styled.main`
   align-items: center;
   gap: 8px;
   background-color: var(--background-color-grey);
+  padding-bottom: 4.25rem;
 `;
