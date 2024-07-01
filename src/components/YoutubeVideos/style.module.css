@@ -23,6 +23,7 @@
   padding-inline: 0.75rem;
   letter-spacing: 0.02em;
   margin-top: 0.5rem;
+  width: 100%;
 }
 .video_infos {
   display: flex;
