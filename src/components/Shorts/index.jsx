@@ -3,7 +3,8 @@ import Shorts_Frame from "../../assets/shorts/Shorts_Frame.png";
 import { data } from "./data";
 import Short from "./Short";
 
-const Shorts = () => {
+const Shorts = ({ start, end }) => {
+  let mappedArr = data.slice(start, end);
   return (
     <Container>
       <TitleContainer>
@@ -11,7 +12,7 @@ const Shorts = () => {
         <Title>Shorts</Title>
       </TitleContainer>
       <ShortsScroll>
-        {data.map((item) => (
+        {mappedArr.map((item) => (
           <Short
             key={item.id}
             image={item.image}
