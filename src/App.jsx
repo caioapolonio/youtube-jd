@@ -10,10 +10,10 @@ function App() {
     <Container>
       <Header />
       <YoutubeVideo videoID={1001} />
-      <Shorts />
+      <Shorts start={0} end={3} />
       <YoutubeVideo videoID={1002} />
       <YoutubeVideo videoID={1003} />
-      <Shorts />
+      <Shorts start={3} end={7} />
       <YoutubeVideo videoID={1004} />
       <Community postID={3001} />
       <YoutubeVideo videoID={1005} />
