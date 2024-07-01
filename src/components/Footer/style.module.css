@@ -1,18 +1,26 @@
 .Footer {
-  display: flex;
+  position: fixed;
+  bottom: 0px;
   padding: 24px;
+  padding-top: 5px;
+  width: 100%;
+  background-color: #ffffff;
+}
+.footer_container {
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
 }
-
 .container_icone {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 3.75rem;
+  height: 2.3125rem;
 }
-
-.container_icone,
+.more_icon {
+  width: 2rem;
+}
 .footer_imgs {
   height: 24px;
 }
